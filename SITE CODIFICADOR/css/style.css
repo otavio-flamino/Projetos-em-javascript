@@ -1,8 +1,5 @@
 body,html{
 	height: 100%;
-}
-
-.corpo-site{
 	background: #E5E5E5;
 }
 
@@ -23,12 +20,6 @@ main{
 	flex-direction: column;
 }
 
-.divEntrada{
-	display: inline-block;
-	width: 800px;
-
-}
-
 .entradaTela{
 	display: inline-block;
 	position: relative;
@@ -39,6 +30,18 @@ main{
 	border-radius: 25px;
 	resize: none;
 	background: #E5E5E5;
+}
+
+.iconExclamacao{
+	width: 16px;
+    position: relative;
+    margin: -35px 0px -19px 111px;
+}
+
+.avisoExclamacao{
+	position: relative;
+    margin: 0 0 17px 130px;
+    font-size: 17px;
 }
 
 .btn-codificar{
@@ -52,7 +55,6 @@ main{
 	font-size: 20px;
 	color: #FFFFFF;
 	background: #001C94;
-	box-shadow: 0 0 11px 0 black;
 	cursor: pointer;
 	box-shadow: 0 8px 6px 0 #080061;
 }
@@ -99,7 +101,41 @@ main{
 	resize: none;
 	margin: 25px 100px;
 	background: black;
-	font-size: 20px;
+	font-size: 18px;
+    color: #dfdfdf;
+}
+
+.btnCopiar{
+	position: absolute;
+    margin: 347px -275px;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    box-shadow: 0 1px 30px 0 #ffffff;
+    opacity: 0;
+    transition: 1s all;
+}
+
+.btnCopiar:hover{
+	color: black;
+    font-weight: bold;
+    transform: scale3d(1.2, 1.2, 1.2);
+    box-shadow: 0 1px 45px 0 #ffffff;
+}
+
+.meninoLupa{
+    position: absolute;
+    width: 260px;
+    margin: 66px 114px;
+}
+
+.frameText{
+    position: absolute;
+    width: 285px;
+    margin: 320px 101px;
 }
 
 footer{
@@ -116,54 +152,7 @@ footer p {
 	margin: 0 15px;
 }
 
-.iconRedes{
+footer img{
 	width: 40px;
     height: 40px;
-}
-
-.btnCopiar{
-	position: absolute;
-    margin: 347px -275px;
-    width: 70px;
-    height: 70px;
-    border-radius: 35px;
-    cursor: pointer;
-    border: none;
-    background: #001C94;
-    color: white;
-    box-shadow: 0 8px 6px 0 #080061;
-}
-
-.btnCopiar:hover{
-	background: #0B008A;
-}
-
-.btnCopiar:active{
-	width: 75px;
-	height: 75px;
-	border-radius: 40px;
-}
-
-.iconExclamacao{
-	width: 16px;
-    position: relative;
-    margin: -35px 0px -19px 111px;
-}
-
-.avisoExclamacao{
-	position: relative;
-    margin: 0 0 17px 130px;
-    font-size: 17px;
-}
-
-.meninoLupa{
-    position: absolute;
-    width: 260px;
-    margin: 66px 114px;
-}
-
-.frameText{
-    position: absolute;
-    width: 285px;
-    margin: 320px 101px;
 }

@@ -7,9 +7,7 @@ function codificaTexto(){
    
     const textArea = document.querySelector("#entrada").value;
 
-    textTratado = textArea.split('').join('').toLowerCase().normalize('NFD').replace(/[^a-zA-Zs]/g, "");
-
-    console.log(textTratado);
+    textTratado = textArea.toLowerCase().normalize('NFD').replace(/[^a-zA-Zs]/g, " ");
 
     if(textTratado === textArea){
         
@@ -74,6 +72,3 @@ function copiaTexto(evento) {
     btnCopiar.innerText = 'COPIAR';
     }, 1000);
 }
-
-
-
