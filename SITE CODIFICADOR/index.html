@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Codfy</title>
+	</head>
+	
+	<body class="corpo-site">
+		<header>
+			<div>
+				<img src="img/Vector.png" class="imagem-logo" alt="imagem-logo-da-página">
+			</div>
+		</header>
+		<main>
+			<div class="primeiroBloco">
+				<div>
+				    <textarea cols="46" rows="10" type="text" class="entradaTela" id="entrada" placeholder="Dígite uma mensagem para que possa ser codificada..."></textarea>
+				</div>
+				<div>
+					<img src="img/exclamacao.png" class="iconExclamacao">
+					<p class="avisoExclamacao">Apenas letras minúsculas sem acentuação e sem caracteres especiais</p>
+				</div>
+				<div>
+					<button onclick="codificaTexto()" class="btn-codificar" >codificar</button>	
+					<button onclick="decodificaTexto()" class="btn-decodificar">descodificar</button>
+				</div>
+			</div>
+			<div>
+				<img src="img/meninoLupa.png" class="meninoLupa" id="imgLupa" style="opacity: 1;">
+				<img src="img/frame 5.png" class="frameText" id="imgFrame" style="opacity: 1;">
+				<textarea type="text" id="saida" class="saidaTela" disabled></textarea>
+				<button id="copiar" class="btnCopiar" style='opacity: 0;'> COPIAR </button>			
+			</div>
+		</main>
+
+		<footer>
+			<p>"Esse site está sendo desenvolvido por mim"</p>
+		</footer>
+
+		<script src="js/principal.js"></script>
+	</body>
+</html>
