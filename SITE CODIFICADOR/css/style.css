@@ -1,5 +1,4 @@
-body,html{
-	height: 100%;
+body{
 	background: #E5E5E5;
 }
 
@@ -19,11 +18,14 @@ main{
 	display: flex;
 	flex-direction: column;
 }
+.div-telaUm{
+  	display: flex;
+   	justify-content: center;
+}
 
 .entradaTela{
 	display: inline-block;
 	position: relative;
-	margin: 30px 90px 0 81px;
 	padding: 15px;
 	font-size: 25px;
 	border: none;
@@ -33,21 +35,22 @@ main{
 }
 
 .iconExclamacao{
-	width: 16px;
-    position: relative;
-    margin: -35px 0px -19px 111px;
+	width: 15px;
 }
 
 .avisoExclamacao{
-	position: relative;
-    margin: 0 0 17px 130px;
+    margin: 0 0 17px 100px;
     font-size: 17px;
+}
+.btn-div{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .btn-codificar{
 	display: inline;
-	margin: 0 15px 0 85px;
-	width: 328px;
+	width: 47%;
 	height: 67px;
 	border-radius: 25px;
 	border: none;
@@ -70,8 +73,7 @@ main{
 }
 
 .btn-decodificar{
-	margin: 0 0 15px 15px;
-	width: 328px;
+	width: 47%;
 	height: 67px;
 	border-radius: 25px;
 	border: none;
@@ -155,4 +157,54 @@ footer p {
 footer img{
 	width: 40px;
     height: 40px;
+}
+
+@media(max-width: 1195px){
+    main{
+    	display: inline;
+    }
+
+    .primeiroBloco{
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    }
+
+    .entradaTela{
+    	margin: 23px 17px;
+    	width: -webkit-fill-available;
+    }
+
+    .btn-div{
+    	display: flex;
+    	flex-direction: column;
+    }
+
+    .btn-codificar{
+    	margin: 22px auto;
+    	width: 60%;
+    }
+
+    .btn-decodificar{
+        margin: 22px auto;
+        width: 60%;
+    }
+    .div-telaDois{
+    	display: flex;
+    	justify-content: center;
+    }
+    .meninoLupa{
+    	display: flex;
+    	justify-content: center;
+    	margin: 43px 0 0;
+    }
+    .frameText{
+    	display: flex;
+    	justify-content: center;
+    	margin: 317px 0 0;
+    }
+    .saidaTela{
+    	width: 60%;
+    	margin: 0;
+    }
 }

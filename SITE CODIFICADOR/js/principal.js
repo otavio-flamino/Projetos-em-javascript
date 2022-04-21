@@ -1,7 +1,7 @@
-var saidaTexto = document.querySelector('#saida');
-var btnCopiar = document.querySelector('#copiar'); 
 const imgMeninoLupa = document.querySelector('#imgLupa');
 const imgFrame = document.querySelector('#imgFrame');
+const saidaTexto = document.querySelector('#saida');
+const btnCopiar = document.querySelector('#copiar'); 
 
 function codificaTexto(){
    
@@ -16,7 +16,7 @@ function codificaTexto(){
         let textCod2 = textCod1.replace(/e/g, "enter");   
         let textCod3 = textCod2.replace(/o/g, "ober");
         let textcriptografado = textCod3.replace(/u/g, "ufat");
-        saidaTexto.value = textcriptografado.split('').join('');
+        saidaTexto.value = textcriptografado;
         document.querySelector('#entrada').value='';
 
     }else{
@@ -37,7 +37,7 @@ function codificaTexto(){
 
 function decodificaTexto(){
  
-    var textArea = document.querySelector("#entrada").value;
+    const textArea = document.querySelector("#entrada").value;
     document.querySelector("#entrada").value='';
    
     let textDecod = textArea.replace(/ai/g, "a");
@@ -45,7 +45,7 @@ function decodificaTexto(){
     let textDecod2 = textDecod1.replace(/imes/g, "i");
     let textDecod3 = textDecod2.replace(/ober/g, "o");
     let textDescriptografado = textDecod3.replace(/ufat/g, "u");
-    saidaTexto.value = textDescriptografado.split('').join('');
+    saidaTexto.value = textDescriptografado;
 
     if(saidaTexto.textLength >= 1){
         btnCopiar.style.opacity = '1';
